@@ -1,28 +1,40 @@
 ---
-title: "D2DCaravan"
+title: "The Door-to-Door Caravan Sampling Problem"
+subtitle: "Reproducible Research: Case Study"
+authors: "Eddyson Canoy, Ellouise Mendoza"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tufte)
+```
+# Target Market Profile
+## Economic Status
+According to [Pew Research Center](https://www.pewresearch.org/fact-tank/2020/04/02/8-charts-on-internet-use-around-the-world-as-countries-grapple-with-covid-19/ft_2020-04-02_globalinternet_04/), 80% of the high-income bracket Filipinos use internet, while 61% for low-income bracket.
+
+```{r echo=FALSE, out.width='100%'}
+knitr::include_graphics('./images/income-bracket.png')
 ```
 
-## R Markdown
+# Return of Investment
+Below states two options in the execution of this project. Outsourced uses the services of the marketing agency while the other scenario, Not Outsourced, uses internal efforts from Globe Telecom.
+## Outsourced
+It was stated in the case that Globe Telecom will invest PhP 5,000,000 to outsource services to the Marketing Agency.In this scenario, only the sim manufacutring expenses are deducted in the annual Revenue Return.
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+```{r echo=FALSE, out.width='100%'}
+knitr::include_graphics('./images/inv-outsourced.png')
 ```
 
-## Including Plots
+## Not Outsourced
+In this scenario, the total expenses are deducted from the annual Revenue Return.
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r echo=FALSE, out.width='100%'}
+knitr::include_graphics('./images/inv-not-outsourced.png')
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+# Percentage Sensitivities
+From 100-day expense of P 23,538,600.00...
+
+If conversion rate (25%) is constant, minimum success rate to earn income is 53%. 
+If success rate (75%) is constant, minimum conversion rate to earn income is 21.4%.
